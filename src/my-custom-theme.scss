@@ -1,0 +1,16 @@
+@import "~@angular/material/theming";
+
+@include mat-core();
+
+$tracker-app-primary: mat-palette($mat-blue);
+$tracker-app-accent: mat-palette($mat-pink, A200, A100, A400);
+
+$tracker-app-warn: mat-palette($mat-red);
+
+$tracker-app-theme: mat-light-theme(
+  $tracker-app-primary,
+  $tracker-app-accent,
+  $tracker-app-warn
+);
+
+@include angular-material-theme($tracker-app-theme);
